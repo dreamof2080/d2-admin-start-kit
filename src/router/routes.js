@@ -19,10 +19,10 @@ const frameIn = [
         component: () => import('@/pages/index')
       },
       {
-        path: '/page1',
-        name: 'page1',
-        component: () => import('@/pages/page1'),
-        meta: { meta, title: '页面 1' }
+        path: '/OA/tables',
+        name: 'oaTables',
+        component: () => import('@/pages/OA/tables'),
+        meta: { meta, title: '表结构' }
       },
       {
         path: '/page2',
