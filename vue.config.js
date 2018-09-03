@@ -9,11 +9,15 @@ function resolve (dir) {
 const baseUrl = '/d2-admin-start-kit-preview/'
 
 module.exports = {
-  baseUrl: baseUrl, // 根据你的实际情况更改这里
+  // 根据你的实际情况更改这里
+  baseUrl: './',
+
   lintOnSave: true,
+
   devServer: {
     publicPath: baseUrl // 和 baseUrl 保持一致
   },
+
   // webpack 设置
   // 默认设置: https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-service/lib/config/base.js
   chainWebpack: config => {
@@ -59,5 +63,12 @@ module.exports = {
     entry
       .add('babel-polyfill')
       .end()
-  }
+  },
+
+  outputDir: undefined,
+  assetsDir: undefined,
+  runtimeCompiler: undefined,
+  productionSourceMap: undefined,
+  parallel: undefined,
+  css: undefined
 }

@@ -12,6 +12,9 @@ import i18n from './i18n'
 // 核心插件
 import d2Admin from '@/plugin/d2admin'
 
+// [ 可选插件组件 ] 区域划分组件
+import SplitPane from 'vue-splitpane'
+
 // 菜单和路由设置
 import router from './router'
 import menuHeader from '@/menu/header'
@@ -20,6 +23,9 @@ import { frameInRoutes } from '@/router/routes'
 
 // 核心插件
 Vue.use(d2Admin)
+
+// 可选插件组件
+Vue.component('SplitPane', SplitPane)
 
 new Vue({
   router,
